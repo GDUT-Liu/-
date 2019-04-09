@@ -11,3 +11,6 @@
 
 <h2>图片设置</h2
 在插入图片时 可以在WXSS中通过设置父级样式类名加空格加image （例如 .content image,其中content可以是上一级<view>的）height 100%和width 100%来保证图片的完整展示，但还是有可能会有拉伸
+
+<h2>API调用返回参数</h2>
+有些返回值不是标准的JSON格式  可以用JSON.parse(res)来标准化 如 console.log(JSON.parse(res.result).errcode);
