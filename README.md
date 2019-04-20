@@ -14,3 +14,6 @@
 
 <h2>API调用返回参数</h2>
 有些返回值不是标准的JSON格式  可以用JSON.parse(res)来标准化 如 console.log(JSON.parse(res.result).errcode);
+
+<h2>数据库数据读取后的展示<h2>
+  在JS文件中先定义一个数组 然后setData,再wxml中用<block wx:for"{{数组}}"> 内容</block>来在内容中展示获取的数据
